@@ -1,0 +1,1786 @@
+
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+
+    <title>程序猿DD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="会一些前端，懂一些后端，做过一些管理，弄过一些运维，搞过一些推广，我是一枚爱折腾的团队万金油">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="程序猿DD">
+    <meta property="og:url" content="http://blog.didispace.com/index.html">
+    <meta property="og:site_name" content="程序猿DD">
+    <meta property="og:description" content="会一些前端，懂一些后端，做过一些管理，弄过一些运维，搞过一些推广，我是一枚爱折腾的团队万金油">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="程序猿DD">
+    <meta name="twitter:description" content="会一些前端，懂一些后端，做过一些管理，弄过一些运维，搞过一些推广，我是一枚爱折腾的团队万金油">
+
+
+
+    <link rel="alternate" href="/atom.xml" title="程序猿DD" type="application/atom+xml" />
+
+
+
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css">
+
+
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-83645028-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?3e1cdb5d0a9e409358566f06f89e048d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            bp.src = '//push.zhanzhang.baidu.com/push.js';
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+</head>
+
+<body>
+<div id="container">
+    <header id="header">
+        <div id="header-main" class="header-inner">
+            <div class="outer">
+                <a href="/" id="logo">
+                    <i class="logo"></i>
+                    <span class="site-title">程序猿DD</span>
+                </a>
+                <nav id="main-nav">
+
+                    <a class="main-nav-link" href="/.">主页</a>
+
+                    <a class="main-nav-link" href="/archives">目录</a>
+
+                    <a class="main-nav-link" href="/aboutme">关于我</a>
+
+                </nav>
+
+
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.jpg" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+
+                <div id="search-form-wrap">
+
+                    <form class="search-form">
+                        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+                        <button type="submit" class="search-form-submit"></button>
+                    </form>
+                    <div class="ins-search">
+                        <div class="ins-search-mask"></div>
+                        <div class="ins-search-container">
+                            <div class="ins-input-wrapper">
+                                <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+                                <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+                            </div>
+                            <div class="ins-section-wrapper">
+                                <div class="ins-section-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        (function (window) {
+                            var INSIGHT_CONFIG = {
+                                TRANSLATION: {
+                                    POSTS: '文章',
+                                    PAGES: '页面',
+                                    CATEGORIES: '分类',
+                                    TAGS: '标签',
+                                    UNTITLED: '(未命名)',
+                                },
+                                ROOT_URL: '/',
+                                CONTENT_URL: '/content.json',
+                            };
+                            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+                        })(window);
+                    </script>
+                    <script src="/js/insight.js"></script>
+
+                </div>
+            </div>
+        </div>
+        <div id="main-nav-mobile" class="header-sub header-inner">
+            <table class="menu outer">
+                <tr>
+
+                    <td><a class="main-nav-link" href="/.">主页</a></td>
+
+                    <td><a class="main-nav-link" href="/archives">目录</a></td>
+
+                    <td><a class="main-nav-link" href="/aboutme">关于我</a></td>
+
+                    <td>
+
+                        <div class="search-form">
+                            <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <div class="outer">
+
+
+
+        <style>
+            .my-avatar {
+                margin: 25px auto;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                padding: 4px;
+                line-height: 1.42857143;
+                background-color: #fff;
+                border: 1px solid #ddd;
+            }
+        </style>
+
+        <aside id="profile">
+            <div class="inner profile-inner">
+                <div class="base-info profile-block">
+                    <img id="avatar" src="/css/images/avatar.jpg" class="my-avatar" />
+                    <h2 id="name">翟永超</h2>
+                    <h3 id="title" style="margin: 1.6em 0em">会一些前端，懂一些后端，做过一些管理，弄过一些运维，搞过一些推广，我是一枚爱折腾的团队万金油</h3>
+                    <span id="location"><i class="fa fa-map-marker"></i>中国 - 上海</span>
+                    <a id="follow" target="_blank" href="https://github.com/dyc87112">关注我</a>
+                </div>
+                <div class="article-info profile-block">
+                    <div class="article-info-block">
+                        73
+                        <span>文章</span>
+                    </div>
+                    <div class="article-info-block">
+                        61
+                        <span>标签</span>
+                    </div>
+                </div>
+
+                <div class="profile-block social-links">
+                    <table>
+                        <tr>
+
+
+                            <td>
+                                <a href="https://github.com/dyc87112" target="_blank" title="github" class=tooltip>
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="http://git.oschina.net/didispace" target="_blank" title="git" class=tooltip>
+                                    <i class="fa fa-git"></i>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="mailto:didi@potatomato.club" target="_blank" title="envelope" class=tooltip>
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="http://weibo.com/2014605502" target="_blank" title="weibo" class=tooltip>
+                                    <i class="fa fa-weibo"></i>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="/atom.xml" target="_blank" title="rss" class=tooltip>
+                                    <i class="fa fa-rss"></i>
+                                </a>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <!--<div class="inner profile-inner">-->
+            <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+            <!--&lt;!&ndash; 自适应广告 &ndash;&gt;-->
+            <!--<ins class="adsbygoogle"-->
+            <!--style="display:block"-->
+            <!--data-ad-client="ca-pub-8254913025324557"-->
+            <!--data-ad-slot="8885020021"-->
+            <!--data-ad-format="auto"></ins>-->
+            <!--<script>-->
+            <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+            <!--</script>-->
+            <!--</div>-->
+        </aside>
+
+
+        <section id="main">
+            <article id="post-spring-boot-1-5-x-feature-1" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-boot-1-5-x-feature-1/">Spring Boot 1.5.x新特性：动态修改日志级别</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-boot-1-5-x-feature-1/">
+                                    <time datetime="2017-01-31T13:33:07.000Z" itemprop="datePublished">2017-01-31</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        前天Spring Boot 1.5终于迎来了第一个RELEASE版本：1.5.0，但是由于一个编译依赖问题在第二天直接连击到了1.5.1。该版本的发布包含了超过320位贡献者的奉献、10000多次的代码提交。
+                        每次Spring Boot版本更新所带来的新特性都是我们每个用户特别关注的。虽然其中不少特性可能对于大部分用户来说还不一定适用，但是作为基础知识的储备还是有一定的必要性。对于1.5.x...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-boot-1-5-x-feature-1/" data-id="ciylneaxb0013yo21gv1s980e" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-boot-1-5-x-feature-1/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-boot-1-5-x-feature-1">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-spring-cloud-tips-1" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-cloud-tips-1/">Spring Cloud实战小贴士：版本依赖关系</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-cloud-tips-1/">
+                                    <time datetime="2017-01-23T03:20:32.000Z" itemprop="datePublished">2017-01-23</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Cloud/">Spring Cloud</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        去年在博客上连载了《Spring Cloud构建微服务架构》的系列博文，虽然这部分内容得到了不少关注者们的支持，但是不得不说这些内容只是适用于Spring Cloud入门阶段对各个组件的初步认识。所以，今年除了将会继续更新《Spring Cloud构建微服务架构》系列的连载之外，准备再开一个新系列：《SpringCloud实战小贴士》，该系列文章内容将会聚焦在下面三个点上：
+
+                        常见问题的解析...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Spring-Cloud/">Spring Cloud</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-cloud-tips-1/" data-id="ciylneb27004syo21mlb6v2jh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-cloud-tips-1/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-cloud-tips-1">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-mybook-spring-cloud-in-action" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/mybook-spring-cloud-in-action/">我的新书《Spring Cloud实战》预告</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/mybook-spring-cloud-in-action/">
+                                    <time datetime="2017-01-20T06:52:16.000Z" itemprop="datePublished">2017-01-20</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Cloud/">Spring Cloud</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        从去年6月开始编写《Spring Cloud构建微服务架构》系列博文开始，受到了不少同行的关注与支持。随后也开通了多个交流群、创建了相关的论坛（http://bbs.springcloud.cn），虽然Spring Cloud在国内变得越来越火热，但是这一块相关的书籍在国内外一直都还是处于空白状态。由于官方文档过于概要和简略，对于一些初学者来说学习门槛较高，所以从去年开始编写这本详细介绍Sp...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Spring-Cloud/">Spring Cloud</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/mybook-spring-cloud-in-action/" data-id="ciylneb44006byo21jzfwttpk" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/mybook-spring-cloud-in-action/#comments" class="article-comment-link ds-thread-count" data-thread-key="mybook-spring-cloud-in-action">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-spring-boot-actuator-without-boot" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-boot-actuator-without-boot/">在传统Spring应用中使用spring-boot-actuator模块提供监控端点</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-boot-actuator-without-boot/">
+                                    <time datetime="2017-01-15T15:03:12.000Z" itemprop="datePublished">2017-01-15</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        在之前发布的《Spring Boot Actuator监控端点小结》一文中，我们介绍了Spring Boot Actuator模块为应用提供的强大监控能力。在Spring Boot应用中，我们只需要简单的引入spring-boot-starter-actuator依赖就能为应用添加各种有用的监控端点。其中，/health端点能够全面检查应用的健康状态，该端点也被Spring Cloud中的服...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>, <a class="tag-link" href="/tags/spring-boot-actuator/">spring-boot-actuator</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-boot-actuator-without-boot/" data-id="ciylneb3m005wyo21qiif7p57" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-boot-actuator-without-boot/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-boot-actuator-without-boot">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-spring-initializr-in-intellij" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-initializr-in-intellij/">使用Intellij中的Spring Initializr来快速构建Spring Boot/Cloud工程</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-initializr-in-intellij/">
+                                    <time datetime="2017-01-09T13:40:43.000Z" itemprop="datePublished">2017-01-09</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        在之前的所有Spring Boot和Spring Cloud相关博文中，都会涉及Spring Boot工程的创建。而创建的方式多种多样，我们可以通过Maven来手工构建或是通过脚手架等方式快速搭建，也可以通过《Spring Boot快速入门》一文中提到的SPRING INITIALIZR页面工具来创建，相信每位读者都有自己最喜欢和最为熟练的创建方式。
+                        本文我们将介绍嵌入的Intellij中的...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Intellij/">Intellij</a>, <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>, <a class="tag-link" href="/tags/Spring-Cloud/">Spring Cloud</a>, <a class="tag-link" href="/tags/Spring-Initializr/">Spring Initializr</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-initializr-in-intellij/" data-id="ciylneb2m0056yo21imobjym7" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-initializr-in-intellij/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-initializr-in-intellij">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-spring-boot-banner" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-boot-banner/">新年彩蛋：Spring Boot自定义Banner</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-boot-banner/">
+                                    <time datetime="2016-12-31T02:29:05.000Z" itemprop="datePublished">2016-12-31</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        在2016年的最后一天，借用Spring Boot的Banner向各位程序猿同仁们问候一声：Happy New Year。
+
+                        接下来我们就来介绍一下这个轻松愉快的自定义banner功能。实现的方式非常简单，我们只需要在Spring Boot工程的/src/main/resources目录下创建一个banner.txt文件，然后将ASCII字符画复制进去，就能替换默认的banner了。比如上图...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-boot-banner/" data-id="ciylneb4q006zyo211gk222lj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-boot-banner/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-boot-banner">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-consul-deregister" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/consul-deregister/">Consul注销实例时候的问题</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/consul-deregister/">
+                                    <time datetime="2016-12-29T07:48:03.000Z" itemprop="datePublished">2016-12-29</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Cloud/">Spring Cloud</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        当我们在Spring Cloud应用中使用Consul来实现服务治理时，由于Consul不会自动将不可用的服务实例注销掉（deregister），这使得在实际使用过程中，可能因为一些操作失误、环境变更等原因让Consul中存在一些无效实例信息，而这些实例在Consul中会长期存在，并处于断开状态。它们虽然不会影响到正常的服务消费过程，但是它们会干扰我们的监控，所以我们可以实现一个清理接口，在...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Consul/">Consul</a>, <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>, <a class="tag-link" href="/tags/Spring-Cloud/">Spring Cloud</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/consul-deregister/" data-id="ciylneawk000hyo21re7k6431" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/consul-deregister/#comments" class="article-comment-link ds-thread-count" data-thread-key="consul-deregister">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-spring-boot-run-backend" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-boot-run-backend/">Spring Boot应用的后台运行配置</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-boot-run-backend/">
+                                    <time datetime="2016-12-28T01:04:18.000Z" itemprop="datePublished">2016-12-28</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        酱油一篇，整理一下关于Spring Boot后台运行的一些配置方式。在介绍后台运行配置之前，我们先回顾一下Spring Boot应用的几种运行方式：
+
+                        运行Spring Boot的应用主类
+                        使用Maven的Spring Boot插件mvn spring-boot:run来运行
+                        打成jar包后，使用java -jar运行
+
+                        我们在开发的时候，通常会使用前两种，而在部署的时候往往会使用第三种。但...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-boot-run-backend/" data-id="ciylneb09002zyo21tpcjqldr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-boot-run-backend/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-boot-run-backend">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-spring-boot-actuator-1" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-boot-actuator-1/">Spring Boot Actuator监控端点小结</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-boot-actuator-1/">
+                                    <time datetime="2016-12-24T03:44:01.000Z" itemprop="datePublished">2016-12-24</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        在Spring Boot的众多Starter POMs中有一个特殊的模块，它不同于其他模块那样大多用于开发业务功能或是连接一些其他外部资源。它完全是一个用于暴露自身信息的模块，所以很明显，它的主要作用是用于监控与管理，它就是：spring-boot-starter-actuator。
+                        spring-boot-starter-actuator模块的实现对于实施微服务的中小团队来说，可以有效地减...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>, <a class="tag-link" href="/tags/spring-boot-actuator/">spring-boot-actuator</a>, <a class="tag-link" href="/tags/监控/">监控</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-boot-actuator-1/" data-id="ciylneb2e004vyo21c7h9wo6f" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-boot-actuator-1/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-boot-actuator-1">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <article id="post-spring-cloud-ribbon-failed-retry" class="article article-type-post" itemscope itemprop="blogPost">
+                <div class="article-inner">
+
+
+                    <header class="article-header">
+
+
+                        <h1 itemprop="name">
+                            <a class="article-title" href="/spring-cloud-ribbon-failed-retry/">为Spring Cloud Ribbon配置请求重试（Camden.SR2+）</a>
+                        </h1>
+
+
+
+                        <div class="article-meta">
+
+                            <div class="article-date">
+                                <i class="fa fa-calendar"></i>
+                                <a href="/spring-cloud-ribbon-failed-retry/">
+                                    <time datetime="2016-12-22T03:42:45.000Z" itemprop="datePublished">2016-12-22</time>
+                                </a>
+                            </div>
+
+
+
+                            <div class="article-category" style="text-transform: none;">
+                                <i class="fa fa-folder"></i>
+                                <a class="article-category-link" href="/categories/Spring-Cloud/">Spring Cloud</a>
+                            </div>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="article-entry" itemprop="articleBody">
+
+
+                        当我们使用Spring Cloud Ribbon实现客户端负载均衡的时候，通常都会利用@LoadBalanced来让RestTemplate具备客户端负载功能，从而实现面向服务名的接口访问（原理可见《Spring Cloud源码分析（二）Ribbon》一文，如果对Spring Cloud中使用Ribbon进行服务消费还没有概念的话，建议先阅读《Spring Cloud构建微服务架构（二）服务...
+
+                    </div>
+                    <footer class="article-footer">
+
+                        <div class="share-container" style="text-transform: none;">
+                            <i class="fa fa-tag"></i>
+                            <a class="tag-link" href="/tags/RestTemplate/">RestTemplate</a>, <a class="tag-link" href="/tags/Ribbon/">Ribbon</a>, <a class="tag-link" href="/tags/Spring-Cloud/">Spring Cloud</a>, <a class="tag-link" href="/tags/Spring-Cloud-Ribbon/">Spring Cloud Ribbon</a>
+                        </div>
+
+                        <!--<div class="share-container">
+
+
+
+            </div>
+
+                <a data-url="http://blog.didispace.com/spring-cloud-ribbon-failed-retry/" data-id="ciylneb2o0059yo21tfnkyrm0" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+            <script>
+                (function ($) {
+                    // Prevent duplicate binding
+                    if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+                        __SHARE_BUTTON_BINDED__ = true;
+                    } else {
+                        return;
+                    }
+                    $('body').on('click', function() {
+                        $('.article-share-box.on').removeClass('on');
+                    }).on('click', '.article-share-link', function(e) {
+                        e.stopPropagation();
+
+                        var $this = $(this),
+                            url = $this.attr('data-url'),
+                            encodedUrl = encodeURIComponent(url),
+                            id = 'article-share-box-' + $this.attr('data-id'),
+                            offset = $this.offset(),
+                            box;
+
+                        if ($('#' + id).length) {
+                            box = $('#' + id);
+
+                            if (box.hasClass('on')){
+                                box.removeClass('on');
+                                return;
+                            }
+                        } else {
+                            var html = [
+                                '<div id="' + id + '" class="article-share-box">',
+                                    '<input class="article-share-input" value="' + url + '">',
+                                    '<div class="article-share-links">',
+                                        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                                        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                                        '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                                        '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                                    '</div>',
+                                '</div>'
+                            ].join('');
+
+                          box = $(html);
+
+                          $('body').append(box);
+                        }
+
+                        $('.article-share-box.on').hide();
+
+                        box.css({
+                            top: offset.top + 25,
+                            left: offset.left
+                        }).addClass('on');
+
+                    }).on('click', '.article-share-box', function (e) {
+                        e.stopPropagation();
+                    }).on('click', '.article-share-box-input', function () {
+                        $(this).select();
+                    }).on('click', '.article-share-box-link', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+                    });
+                })(jQuery);
+            </script>
+            -->
+
+
+                        <a href="http://blog.didispace.com/spring-cloud-ribbon-failed-retry/#comments" class="article-comment-link ds-thread-count" data-thread-key="spring-cloud-ribbon-failed-retry">评论</a>
+
+
+                    </footer>
+                </div>
+
+            </article>
+
+
+
+            <nav id="page-nav">
+                <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+            </nav>
+        </section>
+
+        <aside id="sidebar">
+
+            <style>
+                .bg-danger {
+                    background-color: #f2dede;
+                    padding: 15px;
+                    margin: 0px;
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                }
+            </style>
+
+
+            <div class="widget-wrap">
+                <h3 class="widget-title">公告</h3>
+                <div class="widget">
+                    <div class="card-front animated col s12 m12 l8 offset-l2 fadeInUp">
+                        <p class="bg-danger">
+                            SpringCloud交流1群：470962790<br>
+                            SpringCloud交流2群：123013854<br>
+                            博主微信：zhaiyongchao1987<br>
+                            欢迎有兴趣的朋友加入分享与交流经验。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget-wrap widget-list">
+                <h3 class="widget-title">欢迎关注我的公众号</h3>
+                <div class="widget">
+                    <img style="width: 200px;" src="/css/images/weixin.jpg" />
+                </div>
+            </div>
+
+
+
+            <div class="widget-wrap">
+                <h3 class="widget-title">分类</h3>
+                <div class="widget">
+                    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Node-js/">Node.js</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring-Boot/">Spring Boot</a><span class="category-list-count">34</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring-Cloud/">Spring Cloud</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术杂记/">技术杂记</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/敏捷管理/">敏捷管理</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔感悟/">随笔感悟</a><span class="category-list-count">5</span></li></ul>
+                </div>
+            </div>
+
+
+            <style>
+                .ds-top-threads li {
+                    padding-bottom: 10px;
+                }
+            </style>
+
+
+            <div class="widget-wrap">
+                <h3 class="widget-title">热评文章</h3>
+                <div class="widget">
+                    <!-- 多说热评文章 start -->
+                    <div class="ds-top-threads" data-range="monthly" data-num-items="10"></div>
+                    <!-- 多说热评文章 end -->
+                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                    <script type="text/javascript">
+                        var duoshuoQuery = {short_name:"coderdidi"};
+                        (function() {
+                            var ds = document.createElement('script');
+                            ds.type = 'text/javascript';ds.async = true;
+                            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                            ds.charset = 'UTF-8';
+                            (document.getElementsByTagName('head')[0]
+                            || document.getElementsByTagName('body')[0]).appendChild(ds);
+                        })();
+                    </script>
+                    <!-- 多说公共JS代码 end -->
+                </div>
+            </div>
+
+
+
+            <div class="widget-wrap">
+                <h3 class="widget-title">最近评论</h3>
+                <div class="widget">
+                    <!-- 多说最新评论 start -->
+                    <div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+                    <!-- 多说最新评论 end -->
+                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                    <script type="text/javascript">
+                        var duoshuoQuery = {short_name:"coderdidi"};
+                        (function() {
+                            var ds = document.createElement('script');
+                            ds.type = 'text/javascript';ds.async = true;
+                            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                            ds.charset = 'UTF-8';
+                            (document.getElementsByTagName('head')[0]
+                            || document.getElementsByTagName('body')[0]).appendChild(ds);
+                        })();
+                    </script>
+                    <!-- 多说公共JS代码 end -->
+                </div>
+            </div>
+
+
+
+            <div class="widget-wrap">
+                <h3 class="widget-title">标签云</h3>
+                <div class="widget tagcloud">
+                    <a href="/tags/AOP/" style="font-size: 10px;">AOP</a> <a href="/tags/Bamboo/" style="font-size: 10px;">Bamboo</a> <a href="/tags/Cache/" style="font-size: 11.67px;">Cache</a> <a href="/tags/Confluence/" style="font-size: 13.33px;">Confluence</a> <a href="/tags/Consul/" style="font-size: 10px;">Consul</a> <a href="/tags/Dubbo/" style="font-size: 10px;">Dubbo</a> <a href="/tags/EhCache/" style="font-size: 10px;">EhCache</a> <a href="/tags/Eureka/" style="font-size: 15px;">Eureka</a> <a href="/tags/Feign/" style="font-size: 10px;">Feign</a> <a href="/tags/Ghost/" style="font-size: 11.67px;">Ghost</a> <a href="/tags/Hystrix/" style="font-size: 10px;">Hystrix</a> <a href="/tags/Intellij/" style="font-size: 10px;">Intellij</a> <a href="/tags/JIRA/" style="font-size: 11.67px;">JIRA</a> <a href="/tags/JVM/" style="font-size: 10px;">JVM</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JdbcTemplate/" style="font-size: 10px;">JdbcTemplate</a> <a href="/tags/Kafka/" style="font-size: 10px;">Kafka</a> <a href="/tags/MongoDB/" style="font-size: 13.33px;">MongoDB</a> <a href="/tags/Mongodb/" style="font-size: 10px;">Mongodb</a> <a href="/tags/MyBatis/" style="font-size: 11.67px;">MyBatis</a> <a href="/tags/Netflix/" style="font-size: 15px;">Netflix</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/OpenFire/" style="font-size: 11.67px;">OpenFire</a> <a href="/tags/RESTful-Api/" style="font-size: 10px;">RESTful Api</a> <a href="/tags/RabbitMQ/" style="font-size: 11.67px;">RabbitMQ</a> <a href="/tags/Redis/" style="font-size: 11.67px;">Redis</a> <a href="/tags/RestTemplate/" style="font-size: 10px;">RestTemplate</a> <a href="/tags/Ribbon/" style="font-size: 13.33px;">Ribbon</a> <a href="/tags/Spark/" style="font-size: 10px;">Spark</a> <a href="/tags/Spring-Boot/" style="font-size: 20px;">Spring Boot</a> <a href="/tags/Spring-Cloud/" style="font-size: 18.33px;">Spring Cloud</a> <a href="/tags/Spring-Cloud-Bus/" style="font-size: 11.67px;">Spring Cloud Bus</a> <a href="/tags/Spring-Cloud-Config/" style="font-size: 11.67px;">Spring Cloud Config</a> <a href="/tags/Spring-Cloud-Ribbon/" style="font-size: 10px;">Spring Cloud Ribbon</a> <a href="/tags/Spring-Initializr/" style="font-size: 10px;">Spring Initializr</a> <a href="/tags/Spring-Security/" style="font-size: 10px;">Spring Security</a> <a href="/tags/Spring-StateMachine/" style="font-size: 10px;">Spring StateMachine</a> <a href="/tags/Spring-Data-JPA/" style="font-size: 10px;">Spring-Data-JPA</a> <a href="/tags/Swagger/" style="font-size: 11.67px;">Swagger</a> <a href="/tags/Transactional/" style="font-size: 10px;">Transactional</a> <a href="/tags/Zuul/" style="font-size: 10px;">Zuul</a> <a href="/tags/fastjson/" style="font-size: 10px;">fastjson</a> <a href="/tags/log4j/" style="font-size: 11.67px;">log4j</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/spring-boot-actuator/" style="font-size: 11.67px;">spring-boot-actuator</a> <a href="/tags/事务/" style="font-size: 10px;">事务</a> <a href="/tags/云服务/" style="font-size: 10px;">云服务</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/定时任务/" style="font-size: 10px;">定时任务</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a> <a href="/tags/异步调用/" style="font-size: 10px;">异步调用</a> <a href="/tags/微服务/" style="font-size: 13.33px;">微服务</a> <a href="/tags/持续交付/" style="font-size: 10px;">持续交付</a> <a href="/tags/敏捷管理/" style="font-size: 16.67px;">敏捷管理</a> <a href="/tags/日志/" style="font-size: 16.67px;">日志</a> <a href="/tags/源码分析/" style="font-size: 11.67px;">源码分析</a> <a href="/tags/爬虫/" style="font-size: 11.67px;">爬虫</a> <a href="/tags/状态机/" style="font-size: 10px;">状态机</a> <a href="/tags/监控/" style="font-size: 10px;">监控</a> <a href="/tags/邮件/" style="font-size: 10px;">邮件</a>
+                </div>
+            </div>
+
+
+
+            <div class="widget-wrap widget-list">
+                <h3 class="widget-title">友情链接</h3>
+                <div class="widget">
+                    <ul>
+
+                        <li>
+                            <a href="http://bbs.springcloud.com.cn">Spring Cloud中文社区</a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.baimaozixun.com">白猫计划资讯站</a>
+                        </li>
+
+                        <li>
+                            <a href="http://itmuch.com/">周立|Spring Cloud</a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.bysocket.com/">泥瓦匠BYSocket的博客</a>
+                        </li>
+
+                        <li>
+                            <a href="http://xujin.org/">许进|沉思录</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div id="toTop" class="fa fa-angle-up"></div>
+        </aside>
+
+    </div>
+
+    <style>
+        .foot-count {
+            color: #009688;
+            font-weight: bold;
+            padding: 0px 5px;
+            font-size: 1.3em;
+        }
+    </style>
+
+    <footer id="footer">
+        <div class="outer">
+            <div id="footer-info" class="inner">
+                &copy; 2016 - 2017 程序猿DD - 翟永超 版权所有<br>
+                <span id="busuanzi_container_site_pv">访问量<span class="foot-count" id="busuanzi_value_site_pv"></span>次</span>
+                <span id="busuanzi_container_site_uv">访客数<span class="foot-count" id="busuanzi_value_site_uv"></span>人次</span>
+                <br>沪ICP备14037150号-2
+                <!--Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.-->
+            </div>
+        </div>
+    </footer>
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:'coderdidi'};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0]
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+
+
+
+
+    <script src="/vendor/lightgallery/js/lightgallery.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-thumbnail.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-pager.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-autoplay.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-fullscreen.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-zoom.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-hash.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-share.min.js"></script>
+    <script src="/vendor/lightgallery/js/lg-video.min.js"></script>
+
+
+
+
+
+    <!-- Custom Scripts -->
+    <script src="/js/main.js"></script>
+
+</div>
+</body>
+</html>
