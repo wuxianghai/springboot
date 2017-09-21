@@ -11,4 +11,7 @@ public interface UserService {
     List<User> selectAllData();
 
     String returnTest(String str);
+
+    User findUserByUserName(String userName);
+
 }
