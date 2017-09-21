@@ -1,5 +1,7 @@
 package com.hardy.freeTest.shiro;
 
+
+import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -11,8 +13,11 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.LinkedHashMap;
 
+
 /**
  * Created by Hardy.wu on 2017/9/21.
+ *
+ * shiro 的配置类
  */
 @Configuration
 public class ShiroConfiguration {
