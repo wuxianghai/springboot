@@ -6,8 +6,10 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+
 
 /**
  * Created by Hardy.wu on 2017/9/21.
@@ -16,10 +18,11 @@ import javax.servlet.http.HttpSession;
 public class LoginController {
 
 
-    @RequestMapping("/login")
-    public String login() {
+    @RequestMapping(value = "/index")
+    public ModelAndView login() {
+        ModelAndView mv = new ModelAndView("login");
         System.out.println("login:logger.............");
-        return "login";
+        return mv;
     }
     @RequestMapping("/loginUser")
     public String loginUser(String username,String password,HttpSession session) {
